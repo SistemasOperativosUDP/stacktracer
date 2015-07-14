@@ -1,0 +1,42 @@
+\hypertarget{traceback__globals_8c}{\section{traceback\-\_\-globals.\-c File Reference}
+\label{traceback__globals_8c}\index{traceback\-\_\-globals.\-c@{traceback\-\_\-globals.\-c}}
+}
+
+
+global \char`\"{}functions\char`\"{} variable for traceback  
+
+
+{\ttfamily \#include \char`\"{}traceback\-\_\-internal.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structfunctsym__t}{functsym\-\_\-t} {\bfseries functions} \mbox{[}F\-U\-N\-C\-T\-S\-\_\-\-M\-A\-X\-\_\-\-N\-U\-M\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+global \char`\"{}functions\char`\"{} variable for traceback This contains the actual definition of the global traceback variable. It is filled with the information necessary for symtabgen.\-pl to later fill the table in.
+
+\begin{DoxyAuthor}{Author}
+Michael Ashley-\/\-Rollman (mpa) 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000006}{Bug}]No known bugs. \end{DoxyRefDesc}
+
+
+\subsection{Variable Documentation}
+\hypertarget{traceback__globals_8c_a1211da85259e17dce361c3b4c40717e1}{\index{traceback\-\_\-globals.\-c@{traceback\-\_\-globals.\-c}!functions@{functions}}
+\index{functions@{functions}!traceback_globals.c@{traceback\-\_\-globals.\-c}}
+\subsubsection[{functions}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf functsym\-\_\-t} functions\mbox{[}F\-U\-N\-C\-T\-S\-\_\-\-M\-A\-X\-\_\-\-N\-U\-M\mbox{]}}}\label{traceback__globals_8c_a1211da85259e17dce361c3b4c40717e1}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= 
+  \{\{(\textcolor{keywordtype}{void} *)\textcolor{keyword}{sizeof}(\hyperlink{structfunctsym__t}{functsym\_t}), 
+    \{(\textcolor{keywordtype}{unsigned} char)(FUNCTS\_MAX\_NUM % 256), 
+     (\textcolor{keywordtype}{unsigned} char)(FUNCTS\_MAX\_NUM / 256),
+     (char)ARGS\_MAX\_NUM,
+     (\textcolor{keywordtype}{char})\textcolor{keyword}{sizeof}(\hyperlink{structargsym__t}{argsym\_t}),
+     (\textcolor{keywordtype}{char})FUNCTS\_MAX\_NAME,
+     (char)ARGS\_MAX\_NAME \}\}\}
+\end{DoxyCode}

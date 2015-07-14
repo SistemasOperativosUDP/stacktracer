@@ -1,0 +1,231 @@
+\hypertarget{traceback_8c}{\section{traceback.\-c File Reference}
+\label{traceback_8c}\index{traceback.\-c@{traceback.\-c}}
+}
+
+
+La funcion Traceback.  
+
+
+{\ttfamily \#include \char`\"{}traceback\-\_\-internal.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}func\-\_\-aux.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ctype.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}string\-\_\-aux.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{traceback_8c_aa6a0c8bb79fbd1977c39da4480abe78c}{locate\-\_\-function} (int num, char $\ast$instruction)
+\begin{DoxyCompactList}\small\item\em funcion locate\-\_\-function \end{DoxyCompactList}\item 
+int \hyperlink{traceback_8c_a15af239b917417b278ca2c9c29203f3a}{search\-\_\-function} (int $\ast$ebp)
+\begin{DoxyCompactList}\small\item\em funcion search\-\_\-function \end{DoxyCompactList}\item 
+int \hyperlink{traceback_8c_a47597f9dcdb5b29ca985f0d713f67bbf}{isprint\-\_\-string} (char $\ast$string)
+\begin{DoxyCompactList}\small\item\em funcion isprint\-\_\-string \end{DoxyCompactList}\item 
+void \hyperlink{traceback_8c_ac708c1aa45c9275dc57e8651b16ece12}{print\-\_\-args} (const \hyperlink{structfunctsym__t}{functsym\-\_\-t} func, int i, int $\ast$ebp, int first)
+\begin{DoxyCompactList}\small\item\em funcion print\-\_\-args \end{DoxyCompactList}\item 
+void \hyperlink{traceback_8c_a8e5dfefbd62333eec548c2abc4e8de16}{print\-\_\-func} (int pos, int $\ast$ebp, int $\ast$main, int $\ast$first)
+\begin{DoxyCompactList}\small\item\em funcion print\-\_\-func \end{DoxyCompactList}\item 
+void \hyperlink{traceback_8c_a3053a018a7f4d2c6a8ab82122d4a5b7d}{traceback} (F\-I\-L\-E $\ast$fp)
+\begin{DoxyCompactList}\small\item\em funcion print\-\_\-func \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La funcion Traceback. Este archivo contiene la funcion traceback y todas las funciones auxiliares adicionales necesarias para la ejecución de traceback. las funciones del archivo corresponden a funciones necesarias por el la funcion traceback para operar de forma recursiva a traves de la tabla de funciones generada. Las busquedas en esta tabla son efectuadas a traves de metodos recursivos en base a las especificaciones indicadas en el documento de requerimiento.
+
+\begin{DoxyAuthor}{Author}
+Calvo Alfaro, Angelo Alejandro (acalvoa) 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000004}{Bug}]No conocidos \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\hypertarget{traceback_8c_a47597f9dcdb5b29ca985f0d713f67bbf}{\index{traceback.\-c@{traceback.\-c}!isprint\-\_\-string@{isprint\-\_\-string}}
+\index{isprint\-\_\-string@{isprint\-\_\-string}!traceback.c@{traceback.\-c}}
+\subsubsection[{isprint\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}int isprint\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}}\label{traceback_8c_a47597f9dcdb5b29ca985f0d713f67bbf}
+
+
+funcion isprint\-\_\-string 
+
+funcion que indica si un string valido apra ser impresa
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & provee el string que debe ser analizado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna un 1 en caso de que el string se pueda imprimir o un 0 en caso de que no pueda ser impreso. 
+\end{DoxyReturn}
+
+
+References strlen().
+
+
+
+Referenced by print\-\_\-args().
+
+\hypertarget{traceback_8c_aa6a0c8bb79fbd1977c39da4480abe78c}{\index{traceback.\-c@{traceback.\-c}!locate\-\_\-function@{locate\-\_\-function}}
+\index{locate\-\_\-function@{locate\-\_\-function}!traceback.c@{traceback.\-c}}
+\subsubsection[{locate\-\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}int locate\-\_\-function (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{char $\ast$}]{instruction}
+\end{DoxyParamCaption}
+)}}\label{traceback_8c_aa6a0c8bb79fbd1977c39da4480abe78c}
+
+
+funcion locate\-\_\-function 
+
+funcion que busca de forma iterativa en la tabla de funciones a partir de una direccion de memoria obtenida de las instrucciones previas a la direccion de retorno con respecto a ebp
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & indica el numero incremental recursivo. Siempre debe ser cero al efectuarse la primera llamada. \\
+\hline
+{\em instruction} & corresponde a un puntero de 1 byte a la direccion de llamada de la funcion a buscar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna el indice de coincidencia con la tabla de funciones. 
+\end{DoxyReturn}
+
+
+References strlen().
+
+
+
+Referenced by search\-\_\-function().
+
+\hypertarget{traceback_8c_ac708c1aa45c9275dc57e8651b16ece12}{\index{traceback.\-c@{traceback.\-c}!print\-\_\-args@{print\-\_\-args}}
+\index{print\-\_\-args@{print\-\_\-args}!traceback.c@{traceback.\-c}}
+\subsubsection[{print\-\_\-args}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-args (
+\begin{DoxyParamCaption}
+\item[{const {\bf functsym\-\_\-t}}]{func, }
+\item[{int}]{i, }
+\item[{int $\ast$}]{ebp, }
+\item[{int}]{first}
+\end{DoxyParamCaption}
+)}}\label{traceback_8c_ac708c1aa45c9275dc57e8651b16ece12}
+
+
+funcion print\-\_\-args 
+
+print\-\_\-args es una funcion recursiva que se encarga de imprimir en pantalla todos los argumentos de una funcion que ha sido identificada a partir de su stack frame el formato bajo el cual se imprimen dichos parametros corresponde al requerido por el documento de requerimientos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & es la funcion que ha sido identificada de la tabla \\
+\hline
+{\em i} & corresponde al valor recursivo, siempre debe ser 0 \\
+\hline
+{\em ebp} & correponde al puntero hacia el stack frame \\
+\hline
+{\em first} & es un puntero que debe ser siempre 1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion no retorna valores. 
+\end{DoxyReturn}
+
+
+References get\-\_\-char\-\_\-value(), get\-\_\-double\-\_\-value(), get\-\_\-float\-\_\-value(), get\-\_\-int\-\_\-value(), get\-\_\-string\-\_\-array\-\_\-value(), get\-\_\-string\-\_\-value(), get\-\_\-void\-\_\-value(), ischar(), isprint\-\_\-string(), strlen(), and substr().
+
+
+
+Referenced by print\-\_\-func().
+
+\hypertarget{traceback_8c_a8e5dfefbd62333eec548c2abc4e8de16}{\index{traceback.\-c@{traceback.\-c}!print\-\_\-func@{print\-\_\-func}}
+\index{print\-\_\-func@{print\-\_\-func}!traceback.c@{traceback.\-c}}
+\subsubsection[{print\-\_\-func}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-func (
+\begin{DoxyParamCaption}
+\item[{int}]{pos, }
+\item[{int $\ast$}]{ebp, }
+\item[{int $\ast$}]{main, }
+\item[{int $\ast$}]{first}
+\end{DoxyParamCaption}
+)}}\label{traceback_8c_a8e5dfefbd62333eec548c2abc4e8de16}
+
+
+funcion print\-\_\-func 
+
+print\-\_\-func es una funcion que a partir de la posicion de la funcion en la tabla y del stack frame idetificado imprime la funcion de acuerdo al formato planteado en la hoja de requerimientos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & correponde a la posicion dentro de la tabla \\
+\hline
+{\em ebp} & correponde al puntero hacia el stack frame \\
+\hline
+{\em main} & es un puntero que indica si ya hubo coicidecia con main siempre debe ser 0 \\
+\hline
+{\em first} & es un puntero que debe ser siempre 1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion no retorna valores. 
+\end{DoxyReturn}
+
+
+References print\-\_\-args().
+
+
+
+Referenced by traceback().
+
+\hypertarget{traceback_8c_a15af239b917417b278ca2c9c29203f3a}{\index{traceback.\-c@{traceback.\-c}!search\-\_\-function@{search\-\_\-function}}
+\index{search\-\_\-function@{search\-\_\-function}!traceback.c@{traceback.\-c}}
+\subsubsection[{search\-\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}int search\-\_\-function (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ebp}
+\end{DoxyParamCaption}
+)}}\label{traceback_8c_a15af239b917417b278ca2c9c29203f3a}
+
+
+funcion search\-\_\-function 
+
+funcion que busca a que funcion de la tabla corresponde un stack frame determianado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ebp} & indica el stack frame a analizar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna la posicion de la funcion que coincide de la tabla de funciones o un -\/1 en caso de no existir coincidencias 
+\end{DoxyReturn}
+
+
+References get\-\_\-function\-\_\-return(), and locate\-\_\-function().
+
+
+
+Referenced by traceback().
+
+\hypertarget{traceback_8c_a3053a018a7f4d2c6a8ab82122d4a5b7d}{\index{traceback.\-c@{traceback.\-c}!traceback@{traceback}}
+\index{traceback@{traceback}!traceback.c@{traceback.\-c}}
+\subsubsection[{traceback}]{\setlength{\rightskip}{0pt plus 5cm}void traceback (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{fp}
+\end{DoxyParamCaption}
+)}}\label{traceback_8c_a3053a018a7f4d2c6a8ab82122d4a5b7d}
+
+
+funcion print\-\_\-func 
+
+print\-\_\-func es una funcion recursiva que se encarga de recorrer el stack, recorriendo los stack frames hasta el wrapper. Para esto hace uso del registro ebp y mueve el puntero hasta que no se enceuntran mas funciones despues del wrapper que corresponde a un indice -\/1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$fp} & correponde al puntero a un stack\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion no retorna valores. 
+\end{DoxyReturn}
+
+
+References get\-\_\-ebp(), get\-\_\-next\-\_\-ebp(), print\-\_\-func(), and search\-\_\-function().
+

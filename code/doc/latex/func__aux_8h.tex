@@ -1,0 +1,310 @@
+\hypertarget{func__aux_8h}{\section{func\-\_\-aux.\-h File Reference}
+\label{func__aux_8h}\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}}
+}
+
+
+Funciones auxiliares assembly.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{func__aux_8h_a7a5f6ac86add069df3070c72c523cace}{get\-\_\-ebp} ()
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-ebp \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{func__aux_8h_a240496d5d1421ed8c400dbd50743c9cf}{get\-\_\-next\-\_\-ebp} (int $\ast$)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-next\-\_\-ebp \end{DoxyCompactList}\item 
+int \hyperlink{func__aux_8h_ae8ed697e6a71a50967c110646c8084cb}{get\-\_\-int\-\_\-value} (int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-int\-\_\-value \end{DoxyCompactList}\item 
+char \hyperlink{func__aux_8h_ac2da63294aa33a5b59f17b888c93e9e0}{get\-\_\-char\-\_\-value} (int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-char\-\_\-value \end{DoxyCompactList}\item 
+float \hyperlink{func__aux_8h_a04630e0f29a6aee59e12f382c998a843}{get\-\_\-float\-\_\-value} (int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-float\-\_\-value \end{DoxyCompactList}\item 
+double \hyperlink{func__aux_8h_a2cbdcb8fca2198d7eadda4d900cdd4d6}{get\-\_\-double\-\_\-value} (int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-double\-\_\-value \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{func__aux_8h_a1d3477bce2d9ff532b6b38ae17faf701}{get\-\_\-string\-\_\-value} (int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-string\-\_\-value \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{func__aux_8h_a51cd015205bcf34e8e77f0cae3bb180c}{get\-\_\-void\-\_\-value} (int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-void\-\_\-value \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{func__aux_8h_a595d818a816ea46d0bc6223e8214caa9}{get\-\_\-string\-\_\-array\-\_\-value} (int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-string\-\_\-array\-\_\-value \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{func__aux_8h_a43424cccb8e6a2a6f977faea614ecb45}{get\-\_\-function\-\_\-return} (int $\ast$)
+\begin{DoxyCompactList}\small\item\em funcion get\-\_\-function\-\_\-return \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funciones auxiliares assembly. Este archivo consta de las implementacion de las funciones definidas en los protottipos
+
+\begin{DoxyAuthor}{Author}
+Calvo Alfaro, Angelo Alejandro (acalvoa) 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]No conocidos \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\hypertarget{func__aux_8h_ac2da63294aa33a5b59f17b888c93e9e0}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-char\-\_\-value@{get\-\_\-char\-\_\-value}}
+\index{get\-\_\-char\-\_\-value@{get\-\_\-char\-\_\-value}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-char\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}char get\-\_\-char\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_ac2da63294aa33a5b59f17b888c93e9e0}
+
+
+funcion get\-\_\-char\-\_\-value 
+
+funcion que recupera el valor del parametro relativo a ebp a partir de un offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+{\em int} & correponde al offset relativo al ebp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna el valor char del argumento 
+\end{DoxyReturn}
+
+
+Referenced by print\-\_\-args().
+
+\hypertarget{func__aux_8h_a2cbdcb8fca2198d7eadda4d900cdd4d6}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-double\-\_\-value@{get\-\_\-double\-\_\-value}}
+\index{get\-\_\-double\-\_\-value@{get\-\_\-double\-\_\-value}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-double\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}double get\-\_\-double\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_a2cbdcb8fca2198d7eadda4d900cdd4d6}
+
+
+funcion get\-\_\-double\-\_\-value 
+
+funcion que recupera el valor del parametro relativo a ebp a partir de un offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+{\em int} & correponde al offset relativo al ebp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna el valor double del argumento 
+\end{DoxyReturn}
+
+
+Referenced by print\-\_\-args().
+
+\hypertarget{func__aux_8h_a7a5f6ac86add069df3070c72c523cace}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-ebp@{get\-\_\-ebp}}
+\index{get\-\_\-ebp@{get\-\_\-ebp}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-ebp}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ get\-\_\-ebp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_a7a5f6ac86add069df3070c72c523cace}
+
+
+funcion get\-\_\-ebp 
+
+funcion que recupera un puntero a la posicion del stack frame
+
+\begin{DoxyReturn}{Returns}
+la funcion retorna un puntero al stack frame que llamo a la funcion traceback 
+\end{DoxyReturn}
+
+
+Referenced by traceback().
+
+\hypertarget{func__aux_8h_a04630e0f29a6aee59e12f382c998a843}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-float\-\_\-value@{get\-\_\-float\-\_\-value}}
+\index{get\-\_\-float\-\_\-value@{get\-\_\-float\-\_\-value}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-float\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}float get\-\_\-float\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_a04630e0f29a6aee59e12f382c998a843}
+
+
+funcion get\-\_\-float\-\_\-value 
+
+funcion que recupera el valor del parametro relativo a ebp a partir de un offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+{\em int} & correponde al offset relativo al ebp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna el valor float del argumento 
+\end{DoxyReturn}
+
+
+Referenced by print\-\_\-args().
+
+\hypertarget{func__aux_8h_a43424cccb8e6a2a6f977faea614ecb45}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-function\-\_\-return@{get\-\_\-function\-\_\-return}}
+\index{get\-\_\-function\-\_\-return@{get\-\_\-function\-\_\-return}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-function\-\_\-return}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-\_\-function\-\_\-return (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_a43424cccb8e6a2a6f977faea614ecb45}
+
+
+funcion get\-\_\-function\-\_\-return 
+
+funcion que recupera el valor de retorno de la funcion de ebp a partir de un stack frame
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna un puntero al vaor de retorno 
+\end{DoxyReturn}
+
+
+Referenced by search\-\_\-function().
+
+\hypertarget{func__aux_8h_ae8ed697e6a71a50967c110646c8084cb}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-int\-\_\-value@{get\-\_\-int\-\_\-value}}
+\index{get\-\_\-int\-\_\-value@{get\-\_\-int\-\_\-value}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-int\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-int\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_ae8ed697e6a71a50967c110646c8084cb}
+
+
+funcion get\-\_\-int\-\_\-value 
+
+funcion que recupera el valor del parametro relativo a ebp a partir de un offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+{\em int} & correponde al offset relativo al ebp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna el valor int del argumento 
+\end{DoxyReturn}
+
+
+Referenced by print\-\_\-args().
+
+\hypertarget{func__aux_8h_a240496d5d1421ed8c400dbd50743c9cf}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-next\-\_\-ebp@{get\-\_\-next\-\_\-ebp}}
+\index{get\-\_\-next\-\_\-ebp@{get\-\_\-next\-\_\-ebp}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-next\-\_\-ebp}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ get\-\_\-next\-\_\-ebp (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_a240496d5d1421ed8c400dbd50743c9cf}
+
+
+funcion get\-\_\-next\-\_\-ebp 
+
+funcion que recupera un puntero al siguiente posicion del stack frame a partir de uno ya existente
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna un puntero al siguiente stack frame 
+\end{DoxyReturn}
+
+
+Referenced by traceback().
+
+\hypertarget{func__aux_8h_a595d818a816ea46d0bc6223e8214caa9}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-string\-\_\-array\-\_\-value@{get\-\_\-string\-\_\-array\-\_\-value}}
+\index{get\-\_\-string\-\_\-array\-\_\-value@{get\-\_\-string\-\_\-array\-\_\-value}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-string\-\_\-array\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ get\-\_\-string\-\_\-array\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_a595d818a816ea46d0bc6223e8214caa9}
+
+
+funcion get\-\_\-string\-\_\-array\-\_\-value 
+
+funcion que recupera el valor del parametro relativo a ebp a partir de un offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+{\em int} & correponde al offset relativo al ebp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna el valor char$\ast$$\ast$ del argumento 
+\end{DoxyReturn}
+
+
+Referenced by print\-\_\-args().
+
+\hypertarget{func__aux_8h_a1d3477bce2d9ff532b6b38ae17faf701}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-string\-\_\-value@{get\-\_\-string\-\_\-value}}
+\index{get\-\_\-string\-\_\-value@{get\-\_\-string\-\_\-value}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-string\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-\_\-string\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_a1d3477bce2d9ff532b6b38ae17faf701}
+
+
+funcion get\-\_\-string\-\_\-value 
+
+funcion que recupera el valor del parametro relativo a ebp a partir de un offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+{\em int} & correponde al offset relativo al ebp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna el valor string del argumento 
+\end{DoxyReturn}
+
+
+Referenced by print\-\_\-args().
+
+\hypertarget{func__aux_8h_a51cd015205bcf34e8e77f0cae3bb180c}{\index{func\-\_\-aux.\-h@{func\-\_\-aux.\-h}!get\-\_\-void\-\_\-value@{get\-\_\-void\-\_\-value}}
+\index{get\-\_\-void\-\_\-value@{get\-\_\-void\-\_\-value}!func_aux.h@{func\-\_\-aux.\-h}}
+\subsubsection[{get\-\_\-void\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ get\-\_\-void\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{func__aux_8h_a51cd015205bcf34e8e77f0cae3bb180c}
+
+
+funcion get\-\_\-void\-\_\-value 
+
+funcion que recupera el valor del parametro relativo a ebp a partir de un offset
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & proporciona un puntero al stack frame \\
+\hline
+{\em int} & correponde al offset relativo al ebp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion retorna el valor void$\ast$ del argumento 
+\end{DoxyReturn}
+
+
+Referenced by print\-\_\-args().
+

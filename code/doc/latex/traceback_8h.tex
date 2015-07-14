@@ -1,0 +1,52 @@
+\hypertarget{traceback_8h}{\section{traceback.\-h File Reference}
+\label{traceback_8h}\index{traceback.\-h@{traceback.\-h}}
+}
+
+
+funciones prototipo de la libreria traceback  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{traceback_8h_a7d9a5118f29c925933e04a32f017bd9c}{traceback} (F\-I\-L\-E $\ast$)
+\begin{DoxyCompactList}\small\item\em funcion print\-\_\-func \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+funciones prototipo de la libreria traceback No borrar este archivo. Contiene las definiciones abstractas de la libreria trace
+
+\begin{DoxyAuthor}{Author}
+Calvo Alfaro, Angelo Alejandro (acalvoa) 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000005}{Bug}]No conocidos \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\hypertarget{traceback_8h_a7d9a5118f29c925933e04a32f017bd9c}{\index{traceback.\-h@{traceback.\-h}!traceback@{traceback}}
+\index{traceback@{traceback}!traceback.h@{traceback.\-h}}
+\subsubsection[{traceback}]{\setlength{\rightskip}{0pt plus 5cm}void traceback (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{fp}
+\end{DoxyParamCaption}
+)}}\label{traceback_8h_a7d9a5118f29c925933e04a32f017bd9c}
+
+
+funcion print\-\_\-func 
+
+print\-\_\-func es una funcion recursiva que se encarga de recorrer el stack, recorriendo los stack frames hasta el wrapper. Para esto hace uso del registro ebp y mueve el puntero hasta que no se enceuntran mas funciones despues del wrapper que corresponde a un indice -\/1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$fp} & correponde al puntero a un stack\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la funcion no retorna valores. 
+\end{DoxyReturn}
+
+
+References get\-\_\-ebp(), get\-\_\-next\-\_\-ebp(), print\-\_\-func(), and search\-\_\-function().
+

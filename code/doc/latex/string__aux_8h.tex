@@ -1,0 +1,117 @@
+\hypertarget{string__aux_8h}{\section{string\-\_\-aux.\-h File Reference}
+\label{string__aux_8h}\index{string\-\_\-aux.\-h@{string\-\_\-aux.\-h}}
+}
+
+
+Funciones prototipo auxiliares de String.  
+
+
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stdlib.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\-\_\-t \hyperlink{string__aux_8h_a008e171a518fe0e0352f31b245e03875}{strlen} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em funcion para contar largo de strings -\/ strlen \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{string__aux_8h_a2b8cd0ab27e281a27f6604642fcf8065}{substr} (char $\ast$cadena, int comienzo, int longitud)
+\begin{DoxyCompactList}\small\item\em funcion para cortar strings -\/ substr \end{DoxyCompactList}\item 
+int \hyperlink{string__aux_8h_a32b780eac337bb8b1bb698e755470916}{ischar} (char $\ast$cadena)
+\begin{DoxyCompactList}\small\item\em funcion para identificar char string \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funciones prototipo auxiliares de String. Este archivo consta de dos funciones auxiliares para la manipulacion de String que son strlen y substr. Estas funciones son necesarias para el correcto funcionamiento de traceback.
+
+\begin{DoxyAuthor}{Author}
+Calvo Alfaro, Angelo Alejandro (acalvoa) 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000003}{Bug}]No conocidos \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\hypertarget{string__aux_8h_a32b780eac337bb8b1bb698e755470916}{\index{string\-\_\-aux.\-h@{string\-\_\-aux.\-h}!ischar@{ischar}}
+\index{ischar@{ischar}!string_aux.h@{string\-\_\-aux.\-h}}
+\subsubsection[{ischar}]{\setlength{\rightskip}{0pt plus 5cm}int ischar (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{cadena}
+\end{DoxyParamCaption}
+)}}\label{string__aux_8h_a32b780eac337bb8b1bb698e755470916}
+
+
+funcion para identificar char string 
+
+Esta funcion identifica si el char$\ast$ es un string
+
+
+\begin{DoxyParams}{Parameters}
+{\em cadena} & Representa el string a analizar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La funcion retorna un 1 si es char o un 0 si es string 
+\end{DoxyReturn}
+
+
+Referenced by print\-\_\-args().
+
+\hypertarget{string__aux_8h_a008e171a518fe0e0352f31b245e03875}{\index{string\-\_\-aux.\-h@{string\-\_\-aux.\-h}!strlen@{strlen}}
+\index{strlen@{strlen}!string_aux.h@{string\-\_\-aux.\-h}}
+\subsubsection[{strlen}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t strlen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{string__aux_8h_a008e171a518fe0e0352f31b245e03875}
+
+
+funcion para contar largo de strings -\/ strlen 
+
+Esta funcion cuenta la cantidad de caracteres validos presentes en un string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & representa el string que se obtendra su largo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La funcion retorna el largo del string suministrado. 
+\end{DoxyReturn}
+
+
+Referenced by isprint\-\_\-string(), locate\-\_\-function(), print\-\_\-args(), and substr().
+
+\hypertarget{string__aux_8h_a2b8cd0ab27e281a27f6604642fcf8065}{\index{string\-\_\-aux.\-h@{string\-\_\-aux.\-h}!substr@{substr}}
+\index{substr@{substr}!string_aux.h@{string\-\_\-aux.\-h}}
+\subsubsection[{substr}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ substr (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{cadena, }
+\item[{int}]{comienzo, }
+\item[{int}]{longitud}
+\end{DoxyParamCaption}
+)}}\label{string__aux_8h_a2b8cd0ab27e281a27f6604642fcf8065}
+
+
+funcion para cortar strings -\/ substr 
+
+Esta funcion corta un string en una cantidad definida por el usuario.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cadena} & Representa el string a cortar \\
+\hline
+{\em comienzo} & Indica la posicion del arreglo char$\ast$ en donde se comienza a cortar la cadena. \\
+\hline
+{\em longitud} & Indica el largo que tendra la cadena\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La funcion retorna el string cortado de acuerdo al largo especificado y se añade al final de este puntos suspensivos. 
+\end{DoxyReturn}
+
+
+References strlen().
+
+
+
+Referenced by print\-\_\-args().
+

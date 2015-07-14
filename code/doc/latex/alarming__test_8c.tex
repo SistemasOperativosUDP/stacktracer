@@ -1,0 +1,50 @@
+\hypertarget{alarming__test_8c}{\section{alarming\-\_\-test.\-c File Reference}
+\label{alarming__test_8c}\index{alarming\-\_\-test.\-c@{alarming\-\_\-test.\-c}}
+}
+
+
+Test code for the traceback function.  
+
+
+{\ttfamily \#include \char`\"{}traceback.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$signal.\-h$>$}\\*
+{\ttfamily \#include $<$sys/mman.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{alarming__test_8c_a92b22720309846541a7bfc406212076f}{\#define {\bfseries M\-E\-G\-A\-B\-Y\-T\-E}~(1024$\ast$1024)}\label{alarming__test_8c_a92b22720309846541a7bfc406212076f}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{alarming__test_8c_a176581674fadf03e97fca02b56603792}{void {\bfseries alarming} (char $\ast$str, char $\ast$notstr)}\label{alarming__test_8c_a176581674fadf03e97fca02b56603792}
+
+\item 
+\hypertarget{alarming__test_8c_ae58ba73b54a4ed2810d212de9ab162b8}{void {\bfseries dingdong} (int sig)}\label{alarming__test_8c_ae58ba73b54a4ed2810d212de9ab162b8}
+
+\item 
+\hypertarget{alarming__test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{alarming__test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{alarming__test_8c_a3c81a2e4d6e4c810c9b4fd4f4c29941a}{int {\bfseries work\-\_\-done} = 0}\label{alarming__test_8c_a3c81a2e4d6e4c810c9b4fd4f4c29941a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Test code for the traceback function. This test calls \hyperlink{traceback_8c_a3053a018a7f4d2c6a8ab82122d4a5b7d}{traceback()} from an alternate signal stack.
+
+Don't try to understand the operation of sigaltstack() from the Linux man page since it is incoherent (at least through glibc 2.\-6). This is better\-: \href{http://www.opengroup.org/onlinepubs/000095399/functions/sigaltstack.html}{\tt http\-://www.\-opengroup.\-org/onlinepubs/000095399/functions/sigaltstack.\-html}
+
+\begin{DoxyAuthor}{Author}
+Dave Eckhardt (de0u) 
+\end{DoxyAuthor}

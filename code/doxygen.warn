@@ -1,0 +1,49 @@
+/home/acalvoa/Descargas/stacktracer/code/tests/add_one.h:10: warning: Member add_one1(int) (function) of file add_one.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/add_one.h:11: warning: Member add_one2(int) (function) of file add_one.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/add_one_test.c:13: warning: Member main() (function) of file add_one_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/alarming_test.c:26: warning: Member MEGABYTE (macro definition) of file alarming_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/alarming_test.c:30: warning: Member alarming(char *str, char *notstr) (function) of file alarming_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/alarming_test.c:37: warning: Member dingdong(int sig) (function) of file alarming_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/alarming_test.c:45: warning: Member main() (function) of file alarming_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/alarming_test.c:28: warning: Member work_done (variable) of file alarming_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/evil_test.c:19: warning: Member foo(char *str) (function) of file evil_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/evil_test.c:23: warning: Member main() (function) of file evil_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:40: warning: argument 'int' of command @param is not found in the argument list of get_char_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:40: warning: argument 'int' of command @param is not found in the argument list of get_char_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:60: warning: argument 'int' of command @param is not found in the argument list of get_double_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:60: warning: argument 'int' of command @param is not found in the argument list of get_double_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:50: warning: argument 'int' of command @param is not found in the argument list of get_float_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:50: warning: argument 'int' of command @param is not found in the argument list of get_float_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:100: warning: argument 'int' of command @param is not found in the argument list of get_function_return(int *)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:30: warning: argument 'int' of command @param is not found in the argument list of get_int_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:30: warning: argument 'int' of command @param is not found in the argument list of get_int_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:21: warning: argument 'int' of command @param is not found in the argument list of get_next_ebp(int *)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:90: warning: argument 'int' of command @param is not found in the argument list of get_string_array_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:90: warning: argument 'int' of command @param is not found in the argument list of get_string_array_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:70: warning: argument 'int' of command @param is not found in the argument list of get_string_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:70: warning: argument 'int' of command @param is not found in the argument list of get_string_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:80: warning: argument 'int' of command @param is not found in the argument list of get_void_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/func_aux.h:80: warning: argument 'int' of command @param is not found in the argument list of get_void_value(int *, int)
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_globals.c:16: warning: Member functions[FUNCTS_MAX_NUM] (variable) of file traceback_globals.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:24: warning: Member TYPE_CHAR (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:25: warning: Member TYPE_INT (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:26: warning: Member TYPE_FLOAT (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:27: warning: Member TYPE_DOUBLE (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:28: warning: Member TYPE_STRING (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:29: warning: Member TYPE_STRING_ARRAY (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:30: warning: Member TYPE_VOIDSTAR (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:31: warning: Member TYPE_UNKNOWN (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:35: warning: Member ARGS_MAX_NUM (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:37: warning: Member ARGS_MAX_NAME (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:39: warning: Member FUNCTS_MAX_NUM (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:41: warning: Member FUNCTS_MAX_NAME (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:44: warning: Member MAX_FUNCTION_SIZE_BYTES (macro definition) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:76: warning: Member functions[FUNCTS_MAX_NUM] (variable) of file traceback_internal.h is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/verify_test.c:13: warning: Member f8(int i, char **f) (function) of file verify_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/tests/verify_test.c:61: warning: Member main() (function) of file verify_test.c is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:50: warning: Member type (variable) of class argsym_t is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:53: warning: Member offset (variable) of class argsym_t is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:56: warning: Member name[ARGS_MAX_NAME] (variable) of class argsym_t is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:64: warning: Member addr (variable) of class functsym_t is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:67: warning: Member name[FUNCTS_MAX_NAME] (variable) of class functsym_t is not documented.
+/home/acalvoa/Descargas/stacktracer/code/traceback/traceback_internal.h:70: warning: Member args[ARGS_MAX_NUM] (variable) of class functsym_t is not documented.

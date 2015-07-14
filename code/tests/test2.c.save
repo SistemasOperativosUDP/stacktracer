@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include "traceback.h"
+
+void foo(char c, char* s, char* un) {
+q  printf("hello from foo\n");
+  traceback(stderr);
+}
+
+int main (int argc, char **argv)
+{
+  foo('a', "abcdefghijklmnopqrstuvwxyz", "abcde");
+  return 0;
+}
+
